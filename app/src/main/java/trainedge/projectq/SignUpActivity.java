@@ -13,7 +13,6 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 
 public class SignUpActivity extends AppCompatActivity {
-
     private ImageView imgV1;
     private ImageView imgV2;
     private ImageView imgV3;
