@@ -12,92 +12,104 @@
     tools:context="trainedge.projectq.LoginPage"
     tools:showIn="@layout/activity_login_page">
 
-    <EditText
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilUserName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/et1"
-        android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
-        android:hint="UserName"
-        android:gravity="left|center"
-        android:textSize="22dp"
-        android:paddingTop="4dp"
-        android:layout_marginTop="50dp"
-        android:text="UserName" />
+        android:layout_below="@+id/tv1">
 
-    <EditText
+        <EditText
+            android:id="@+id/et1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="left|center"
+            android:hint="UserName"
+            android:paddingTop="4dp"
+            android:textSize="22dp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPassword"
-        android:ems="10"
-        android:id="@+id/et2"
-        android:layout_below="@+id/et1"
         android:layout_alignParentStart="true"
-        android:hint="Password"
-        android:textSize="22dp"
-        android:paddingTop="4dp" />
+        android:layout_below="@+id/tilUserName"
+>
+
+        <EditText
+            android:id="@+id/et2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingTop="4dp"
+            android:textSize="22dp" />
+    </android.support.design.widget.TextInputLayout>
 
     <Button
+        android:id="@+id/b1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="LOGIN"
-        android:id="@+id/b1"
-        android:layout_below="@+id/et2"
         android:layout_alignParentStart="true"
+        android:layout_below="@+id/tilPassword"
+        android:text="LOGIN"
         android:textSize="20dp" />
 
     <TextView
+        android:id="@+id/tv2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Forgot Password?"
-        android:id="@+id/tv2"
         android:layout_alignBottom="@+id/b1"
         android:layout_alignParentEnd="true"
+        android:paddingBottom="4dp"
         android:paddingTop="4dp"
-        android:paddingBottom="4dp" />
+        android:text="Forgot Password?"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <Button
+        android:id="@+id/b2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Login using Facebook"
-        android:id="@+id/b2"
-        android:layout_below="@+id/b1"
         android:layout_alignParentStart="true"
-        android:textSize="20dp"
+        android:layout_below="@+id/b1"
+        android:layout_marginTop="6dp"
         android:background="#7391eb"
         android:paddingTop="4dp"
-        android:layout_marginTop="6dp" />
+        android:text="Login using Facebook"
+        android:textSize="20dp" />
 
     <Button
+        android:id="@+id/b3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="LOGIN USING GOOGLE+"
-        android:id="@+id/b3"
-        android:layout_below="@+id/b2"
         android:layout_alignParentStart="true"
-        android:textSize="20dp"
+        android:layout_below="@+id/b2"
+        android:layout_marginTop="6dp"
         android:background="#f13948"
         android:paddingTop="4dp"
-        android:layout_marginTop="6dp" />
+        android:text="LOGIN USING GOOGLE+"
+        android:textSize="20dp" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="SIGN UP"
         android:id="@+id/tv3"
-        android:layout_marginBottom="80dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
-
-    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Login!!! To Play"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        android:text="SIGN UP"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
         android:id="@+id/tv1"
-        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Login!!! To Play"
         android:textSize="30dp"
         android:textStyle="bold" />
 
