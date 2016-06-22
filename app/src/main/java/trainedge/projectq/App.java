@@ -1,5 +1,4 @@
 package trainedge.projectq;
-
 import android.app.Application;
 
 import com.facebook.FacebookSdk;
