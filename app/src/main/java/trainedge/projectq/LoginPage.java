@@ -28,16 +28,14 @@ public class LoginPage extends AppCompatActivity {
         setContentView(R.layout.activity_login_page);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        tv1 =(TextView)findViewById(R.id.tv1);
-        tv2 =(TextView)findViewById(R.id.tv2);
-        tv3 =(TextView)findViewById(R.id.tv3);
-        et1 =(EditText)findViewById(R.id.et1);
-        et2 =(EditText)findViewById(R.id.et2);
-        b1 =(Button)findViewById(R.id.b1);
-        b2 =(Button)findViewById(R.id.b2);
-        b3 =(Button)findViewById(R.id.b3);
-
-
+        tv1 = (TextView) findViewById(R.id.tv1);
+        tv2 = (TextView) findViewById(R.id.tv2);
+        tv3 = (TextView) findViewById(R.id.tv3);
+        et1 = (EditText) findViewById(R.id.et1);
+        et2 = (EditText) findViewById(R.id.et2);
+        b1 = (Button) findViewById(R.id.b1);
+        b2 = (Button) findViewById(R.id.b2);
+        b3 = (Button) findViewById(R.id.b3);
 
 
     }
