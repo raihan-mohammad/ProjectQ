@@ -3,16 +3,18 @@
     package="trainedge.projectq">
 
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
+        android:name=".App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:name=".App"
         android:theme="@style/AppTheme">
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_app_id" />
+
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
@@ -26,13 +28,20 @@
         <activity
             android:name="com.facebook.FacebookActivity"
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar"
-            android:label="@string/app_name" />
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <activity
             android:name=".LoginPage"
             android:label="@string/title_activity_login_page"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Main_Page"></activity>
+        <activity android:name=".Main_Page" />
+        <activity android:name=".Login" />
+        <activity android:name=".Topic" />
+        <activity android:name=".Topic_grid" />
+        <activity android:name=".Exercise_result" />
+        <activity android:name=".Play" />
+        <activity android:name=".Play_two" />
+        <activity android:name=".Play_three"></activity>
     </application>
 
 </manifest>

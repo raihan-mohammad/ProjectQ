@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="trainedge.projectq.Login"
+    android:background="@drawable/grey">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv1"
+        android:layout_marginTop="16dp">
+
+        <EditText
+            android:id="@+id/et1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="left|center"
+            android:hint="UserName"
+            android:paddingTop="4dp"
+            android:textSize="22dp"
+            android:textColor="#13fbf9f9"
+            android:textColorHint="#13fbf9f9"
+            android:linksClickable="false"
+            style="@style/text_style" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tilUserName"
+        android:layout_marginTop="16dp">
+
+        <EditText
+            android:id="@+id/et2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingTop="4dp"
+            android:textSize="22dp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:id="@+id/bl"
+        android:layout_below="@+id/tilPassword"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textlogin"
+        android:layout_below="@+id/bl"
+        android:layout_alignParentStart="true"
+        android:text="____________LOG IN USING_____________"
+        android:textSize="20dp"
+        android:layout_marginTop="30dp" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/iv1"
+        android:layout_below="@+id/textlogin"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/goog"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="55dp" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/iv2"
+        android:layout_below="@+id/textlogin"
+        android:layout_toEndOf="@+id/iv1"
+        android:src="@drawable/fb"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="16dp" />
+
+</RelativeLayout>
