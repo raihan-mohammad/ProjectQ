@@ -4,4 +4,5 @@
     <string name="facebook_app_id">896959773783447</string>
     <string name="title_activity_sign_up">SignUpActivity</string>
     <string name="title_activity_login_page">LoginPage</string>
+    <string name="default_web_client_Id">740737818349-4uhthl3129iaj36ar7urv106s4d8t70t.apps.googleusercontent.com</string>
 </resources>
