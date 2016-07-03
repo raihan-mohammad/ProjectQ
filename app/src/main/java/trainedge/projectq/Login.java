@@ -10,6 +10,10 @@ import android.widget.TextView;
 
 public class Login extends AppCompatActivity {
 
+    private TextInputLayout tillUserName;
+    private TextInputLayout tillPassword;
+    private EditText et1;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
