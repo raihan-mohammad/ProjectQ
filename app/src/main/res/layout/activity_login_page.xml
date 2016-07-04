@@ -22,7 +22,7 @@
     </android.support.design.widget.AppBarLayout>
 
     <include
-        android:id="@+id/tv1"
+
         layout="@layout/content_login_page" />
 
 </android.support.design.widget.CoordinatorLayout>

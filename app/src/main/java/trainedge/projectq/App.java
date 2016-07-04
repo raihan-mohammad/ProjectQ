@@ -1,4 +1,5 @@
 package trainedge.projectq;
+
 import android.app.Application;
 
 import com.facebook.FacebookSdk;
@@ -13,5 +14,7 @@ public class App extends Application {
         super.onCreate();
         FacebookSdk.sdkInitialize(getApplicationContext());
         AppEventsLogger.activateApp(this);
+
+
     }
 }

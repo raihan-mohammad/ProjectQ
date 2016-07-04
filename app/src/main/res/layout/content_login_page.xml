@@ -68,29 +68,23 @@
         android:text="Forgot Password?"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
-    <Button
-        android:id="@+id/b2"
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/b1"
-        android:layout_marginTop="6dp"
-        android:background="#7391eb"
-        android:paddingTop="4dp"
-        android:text="Login using Facebook"
-        android:textSize="20dp" />
+        android:layout_gravity="center_horizontal"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp" />
 
-    <Button
-        android:id="@+id/b3"
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/tv3"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/b2"
-        android:layout_marginTop="6dp"
-        android:background="#f13948"
-        android:paddingTop="4dp"
-        android:text="LOGIN USING GOOGLE+"
-        android:textSize="20dp" />
+        android:layout_marginBottom="34dp" />
 
     <TextView
         android:id="@+id/tv3"
