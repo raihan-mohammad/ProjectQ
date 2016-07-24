@@ -12,6 +12,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.facebook.login.widget.LoginButton;
 import com.google.android.gms.auth.api.Auth;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
@@ -58,6 +59,7 @@ public class LoginPage extends AppCompatActivity implements GoogleApiClient.OnCo
         b1 = (Button) findViewById(R.id.b1);
         b2 = (Button) findViewById(R.id.login_button);
 
+
         connectWithGoogleApi();
         findViewById(R.id.sign_in_button).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -73,6 +75,7 @@ public class LoginPage extends AppCompatActivity implements GoogleApiClient.OnCo
                 if (user != null) {
                     // User is signed in
                     Log.d(TAG, "onAuthStateChanged:signed_in:" + user.getUid());
+
                 } else {
                     // User is signed out
                     Log.d(TAG, "onAuthStateChanged:signed_out");

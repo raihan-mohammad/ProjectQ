@@ -3,6 +3,8 @@
     package="trainedge.projectq">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:name=".App"
@@ -28,19 +30,29 @@
             android:name=".LoginPage"
             android:label="@string/title_activity_login_page"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Topic__Grid"></activity>
-
-        <activity android:name=".First">
+        <activity android:name=".Topic__Grid" />
+        <activity android:name=".Player">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
-        <activity android:name=".Player" />
+
+
         <activity android:name=".Add_quiz" />
         <activity android:name=".Add_picture" />
-        <activity android:name=".AddConfirmation"></activity>
+        <activity android:name=".AddConfirmation" />
+        <activity
+            android:name=".FirstActivity"
+            android:label="@string/title_activity_first"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity android:name="com.yongchun.library.view.ImageSelectorActivity" />
+        <activity android:name="com.yongchun.library.view.ImagePreviewActivity" />
+        <activity android:name="com.yongchun.library.view.ImageCropActivity" />
 
     </application>
 
