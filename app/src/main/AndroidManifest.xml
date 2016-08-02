@@ -29,9 +29,7 @@
         <activity
             android:name=".LoginPage"
             android:label="@string/title_activity_login_page"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Topic__Grid" />
-        <activity android:name=".Player">
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -39,17 +37,13 @@
             </intent-filter>
 
         </activity>
-
+        <activity android:name=".Topic__Grid" />
+        <activity android:name=".Player" />
+        <activity android:name=".PlayerMain" />
 
         <activity android:name=".Add_quiz" />
         <activity android:name=".Add_picture" />
         <activity android:name=".AddConfirmation" />
-        <activity
-            android:name=".FirstActivity"
-            android:label="@string/title_activity_first"
-            android:theme="@style/AppTheme.NoActionBar">
-
-        </activity>
         <activity android:name="com.yongchun.library.view.ImageSelectorActivity" />
         <activity android:name="com.yongchun.library.view.ImagePreviewActivity" />
         <activity android:name="com.yongchun.library.view.ImageCropActivity" />

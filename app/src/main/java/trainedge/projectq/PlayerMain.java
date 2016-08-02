@@ -1,6 +1,7 @@
 package trainedge.projectq;
 
 import android.app.Dialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -14,12 +15,17 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class PlayerMain extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
     private DrawerLayout drawerLayout;
+    private RelativeLayout relative1;
+    private RelativeLayout relative2;
+    private RelativeLayout relative3;
+    private RelativeLayout relative4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,8 +33,17 @@ public class PlayerMain extends AppCompatActivity
         setContentView(R.layout.activity_player_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-
+        relative1 = (RelativeLayout) findViewById(R.id.relative1);
+        relative2 = (RelativeLayout) findViewById(R.id.relative2);
+        relative3 = (RelativeLayout) findViewById(R.id.relative3);
+        relative4 = (RelativeLayout) findViewById(R.id.relative4);
+        relative4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent= new Intent(PlayerMain.this,Add_quiz.class);
+                startActivity(intent);
+            }
+        });
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);

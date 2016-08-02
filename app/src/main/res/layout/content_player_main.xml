@@ -30,7 +30,8 @@
             android:padding="16dp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            android:layout_margin="4dp">
+            android:layout_margin="4dp"
+            android:id="@+id/relative1">
 
             <ImageView
                 android:id="@+id/imageView"
@@ -61,7 +62,8 @@
             android:padding="16dp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            android:layout_margin="4dp">
+            android:layout_margin="4dp"
+            android:id="@+id/relative2">
 
             <ImageView
                 android:id="@+id/imageView2"
@@ -92,7 +94,8 @@
             android:padding="16dp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            android:layout_margin="4dp">
+            android:layout_margin="4dp"
+            android:id="@+id/relative3">
 
             <ImageView
                 android:id="@+id/imageView3"
@@ -123,7 +126,8 @@
             android:padding="16dp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            android:layout_margin="4dp">
+            android:layout_margin="4dp"
+            android:id="@+id/relative4">
 
             <ImageView
                 android:id="@+id/imageView4"
