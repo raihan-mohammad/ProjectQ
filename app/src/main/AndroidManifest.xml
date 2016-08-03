@@ -50,10 +50,7 @@
             android:theme="@style/AppTheme.NoActionBar">
 
         </activity>
-        <activity android:name="com.yongchun.library.view.ImageSelectorActivity" />
-        <activity android:name="com.yongchun.library.view.ImagePreviewActivity" />
-        <activity android:name="com.yongchun.library.view.ImageCropActivity" />
-
+        <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity" />
     </application>
 
 </manifest>
